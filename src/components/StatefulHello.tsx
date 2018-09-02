@@ -3,6 +3,8 @@ import * as React from "react";
 export interface Props {
   name: string;
   enthusiasmLevel?: number;
+  onIncrement?: () => void;
+  onDecrement?: () => void;
 }
 
 interface State {
@@ -37,7 +39,6 @@ class Hello extends React.Component<Props, State> {
   }
 
   updateEnthusiasm(currentEnthusiasm: number) {
-      console.log('coucou');
     this.setState({ currentEnthusiasm });
   }
 }

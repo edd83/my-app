@@ -32,6 +32,5 @@ export default Hello;
 // helpers
 
 function getExclamationMarks(numChars: number) {
-  console.log('getExclamationMarks');
   return Array(numChars + 1).join('!');
 }
